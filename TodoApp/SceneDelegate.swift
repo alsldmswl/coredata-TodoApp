@@ -1,9 +1,3 @@
-//
-//  SceneDelegate.swift
-//  TodoApp
-//
-//  Created by eun-ji on 2023/02/24.
-//
 
 import UIKit
 

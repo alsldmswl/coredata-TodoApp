@@ -1,9 +1,3 @@
-//
-//  TodoDetailViewController.swift
-//  TodoApp
-//
-//  Created by eun-ji on 2023/02/24.
-//
 
 import UIKit
 import CoreData
@@ -115,7 +109,7 @@ class TodoDetailViewController: UIViewController {
         object.priorityLevel = priority?.rawValue ?? PriorityLevel.level1.rawValue
         
         let appDelegate = (UIApplication.shared.delegate as! AppDelegate)
-        appDelegate.saveContext()
+        appDelegate.saveContext() //데이터 저장
     }
     
     
@@ -142,12 +136,8 @@ class TodoDetailViewController: UIViewController {
     
     
     @IBAction func deleteTodo() {
-        guard let hasData = selectedTodoList else {
-            return
-        }
-        guard let hasUUID = hasData.uuid else {
-            return
-        }
+        guard let hasData = selectedTodoList else {return}
+        guard let hasUUID = hasData.uuid else {return}
         
         let fetchRequest: NSFetchRequest<TodoList> = TodoList.fetchRequest()
         fetchRequest.predicate = NSPredicate(format: "uuid = %@", hasUUID as CVarArg)

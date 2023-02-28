@@ -1,9 +1,3 @@
-//
-//  ViewController.swift
-//  TodoApp
-//
-//  Created by eun-ji on 2023/02/24.
-//
 
 import UIKit
 import CoreData
@@ -75,6 +69,7 @@ class ViewController: UIViewController {
 //
 //        self.navigationController?.navigationBar.standardAppearance = barAppearance
     }
+    
     @objc func addNewTodo() { // + 버튼 눌리면 화면 전환
         let detailVC = TodoDetailViewController.init(nibName: "TodoDetailViewController", bundle: nil)
         detailVC.delegate = self
