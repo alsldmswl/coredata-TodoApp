@@ -50,6 +50,11 @@
 <tr>
     <td><b>Main.Storyboard</b></td>
 <td>시작 화면을 구성하는 storyboard 파일입니다.</td>
+</tr>  
+
+<tr>
+    <td><b>TodoApp.xcdatamodeld</b></td>
+<td>data model 파일입니다.</td>
 </tr>
 
 
